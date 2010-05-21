@@ -5,6 +5,8 @@ gc_malloc: func (size: SizeT) -> Pointer {
     VMM alloc(size)
 }
 
+malloc: unmangled func (size: SizeT) -> Pointer { gc_malloc(size) }
+
 gc_malloc_atomic: func (size: SizeT) -> Pointer {
     gc_malloc(size)
 }

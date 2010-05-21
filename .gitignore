@@ -17,4 +17,4 @@
 # Ignore ooc temporary directories
 ooc_tmp
 rock_tmp
-
+.libs
